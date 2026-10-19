@@ -1,0 +1,316 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #000;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+/* HEADER */
+
+header {
+    height: 75px;
+    padding: 0 35px;
+    border-bottom: 1px solid #333;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #ff2222;
+}
+
+nav {
+    display: flex;
+    gap: 28px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav a:hover,
+nav .active {
+    color: #ff2222;
+}
+
+/* HERO */
+
+.hero {
+    min-height: 330px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    border-bottom: 1px solid #441111;
+
+    background:
+        linear-gradient(rgba(0,0,0,.75), rgba(0,0,0,.9)),
+        radial-gradient(circle, #441111, #000 65%);
+}
+
+.hero h1 {
+    font-size: 55px;
+    margin: 0;
+    letter-spacing: 2px;
+}
+
+.red-line {
+    width: 100px;
+    height: 4px;
+    background: #ff2222;
+    margin: 18px auto;
+    box-shadow: 0 0 15px #ff2222;
+}
+
+.hero p {
+    max-width: 700px;
+    color: #ccc;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* SECTION TITLE */
+
+.section-title {
+    text-align: center;
+    font-size: 36px;
+    margin: 45px 0 30px;
+    color: #ff2222;
+}
+
+/* SERVICES */
+
+.services {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.service-card {
+    background: #070707;
+
+    border: 1px solid #442020;
+    border-radius: 12px;
+
+    padding: 28px;
+    text-align: center;
+
+    transition: .3s;
+
+    box-shadow: 0 0 10px rgba(255,0,0,.1);
+}
+
+.service-card:hover {
+    transform: translateY(-7px);
+    border-color: #ff2222;
+    box-shadow: 0 0 25px rgba(255,0,0,.45);
+}
+
+.service-icon {
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+
+.service-card h2 {
+    font-size: 23px;
+    margin: 10px 0;
+}
+
+.service-card p {
+    color: #bbb;
+    line-height: 1.5;
+    min-height: 48px;
+}
+
+.service-card button {
+    margin-top: 15px;
+
+    padding: 11px 22px;
+
+    background: #e50909;
+    color: white;
+
+    border: none;
+    border-radius: 5px;
+
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.service-card button:hover {
+    background: #ff2525;
+    box-shadow: 0 0 15px #ff2222;
+}
+
+/* WHY US */
+
+.why-us {
+    width: 90%;
+    max-width: 1200px;
+
+    margin: 60px auto 0;
+    padding: 40px 30px;
+
+    border-top: 1px solid #441111;
+    border-bottom: 1px solid #441111;
+}
+
+.why-us > h2 {
+    text-align: center;
+    color: #ff2222;
+    font-size: 32px;
+    margin-bottom: 35px;
+}
+
+.benefits {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.benefits div {
+    text-align: center;
+}
+
+.benefits span {
+    font-size: 38px;
+}
+
+.benefits h3 {
+    font-size: 18px;
+}
+
+.benefits p {
+    color: #aaa;
+    line-height: 1.5;
+}
+
+/* CONTACT */
+
+.contact-box {
+    width: 90%;
+    max-width: 1200px;
+
+    margin: 45px auto;
+    padding: 30px;
+
+    border: 1px solid #ff2222;
+    border-radius: 12px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    box-shadow: 0 0 15px rgba(255,0,0,.15);
+}
+
+.contact-box h2 {
+    color: #ff2222;
+    margin: 0 0 10px;
+}
+
+.contact-box p {
+    color: #ccc;
+}
+
+.contact-box button {
+    padding: 14px 25px;
+
+    background: #ff2222;
+    color: white;
+
+    border: none;
+    border-radius: 5px;
+
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.contact-box button:hover {
+    background: #ff3333;
+    box-shadow: 0 0 18px #ff2222;
+}
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+    padding: 25px;
+
+    border-top: 1px solid #222;
+
+    color: #888;
+}
+
+/* TABLET */
+
+@media (max-width: 1000px) {
+
+    .services {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .benefits {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    nav {
+        gap: 15px;
+    }
+}
+
+/* MOBILE */
+
+@media (max-width: 650px) {
+
+    header {
+        height: auto;
+        padding: 20px;
+
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .services {
+        grid-template-columns: 1fr;
+    }
+
+    .benefits {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-box {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+}
