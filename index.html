@@ -4,181 +4,136 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Contact Us | Automobile World</title>
+    <title>Automobile World</title>
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            background: #080808;
-            color: white;
-            font-family: Arial, sans-serif;
-        }
-
-        header {
-            background: #111;
-            text-align: center;
-            padding: 25px;
-            border-bottom: 3px solid red;
-        }
-
-        header h1 {
-            color: red;
-            font-size: 32px;
-        }
-
-        nav {
-            background: #181818;
-            padding: 18px;
-            text-align: center;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 15px;
-            font-weight: bold;
-        }
-
-        nav a:hover {
-            color: red;
-        }
-
-        .contact-section {
-            max-width: 800px;
-            margin: 40px auto;
-            padding: 30px;
-        }
-
-        .contact-section h2 {
-            color: red;
-            font-size: 32px;
-            text-align: center;
-            margin-bottom: 15px;
-        }
-
-        .contact-section p {
-            text-align: center;
-            color: #ccc;
-            line-height: 1.7;
-            margin-bottom: 25px;
-        }
-
-        .contact-form {
-            background: #151515;
-            padding: 25px;
-            border: 1px solid #444;
-            border-radius: 10px;
-        }
-
-        .contact-form input,
-        .contact-form textarea {
-            width: 100%;
-            padding: 14px;
-            margin-bottom: 15px;
-            background: #222;
-            color: white;
-            border: 1px solid #555;
-            border-radius: 5px;
-            font-size: 16px;
-        }
-
-        .contact-form button {
-            width: 100%;
-            padding: 14px;
-            background: red;
-            color: white;
-            border: 2px solid red;
-            border-radius: 5px;
-            font-size: 16px;
-            font-weight: bold;
-            cursor: pointer;
-        }
-
-        .contact-form button:hover {
-            background: black;
-            color: red;
-        }
-
-        footer {
-            background: #111;
-            padding: 20px;
-            text-align: center;
-            color: #aaa;
-            border-top: 2px solid red;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <header>
-        <h1>AUTOMOBILE WORLD</h1>
-        <p>We are here to help you!</p>
+    <!-- Navigation Bar -->
+    <header class="navbar">
+
+        <a href="#home" class="logo">
+            <div class="car-logo">🏎</div>
+            <div>AUTOMOBILE <span>WORLD</span></div>
+        </a>
+
+        <nav>
+            <a href="#home" class="active">HOME</a>
+            <a href="parts/index.html">PARTS</a>
+            <a href="showroom/index.html">SHOWROOM</a>
+            <a href="service/index.html">SERVICE</a>
+<a href="contact/index.html">CONTACT</a>
+        </nav>
+
     </header>
 
-    <nav>
-        <a href="../index.html">HOME</a>
-        <a href="../parts/index.html">PARTS</a>
-        <a href="../showroom/index.html">SHOWROOM</a>
-        <a href="../service/index.html">SERVICE</a>
-        <a href="index.html">CONTACT US</a>
-    </nav>
 
-    <section class="contact-section">
+    <!-- Main Banner -->
+    <section class="hero" id="home">
 
-        <h2>CONTACT US</h2>
+        <div class="hero-content">
 
-        <p>
-            Have questions about automobiles, spare parts,
-            or vehicle services? Send us a message!
-        </p>
+            <h3>WELCOME TO</h3>
 
-        <form class="contact-form" id="contactForm">
+            <h1>
+                AUTOMOBILE
+                <span>WORLD</span>
+            </h1>
 
-            <input type="text"
-                   placeholder="Enter Your Name"
-                   required>
+            <div class="red-line"></div>
 
-            <input type="email"
-                   placeholder="Enter Your Email"
-                   required>
+            <p class="tagline">
+                HIGH QUALITY PARTS
+                <span>|</span>
+                BEST PRICES
+                <span>|</span>
+                COMPLETE TRUST
+            </p>
 
-            <input type="tel"
-                   placeholder="Enter Your Phone Number"
-                   pattern="[0-9]{10}"
-                   maxlength="10"
-                   required>
-
-            <textarea rows="5"
-                      placeholder="Write Your Message"
-                      required></textarea>
-
-            <button type="submit">SEND MESSAGE</button>
-
-        </form>
+        </div>
 
     </section>
 
+
+    <!-- Automobile Quote -->
+    <section class="quote-section">
+
+        <div class="quote-box">
+
+            <div class="quote-heading">
+                <span></span>
+                <b>“</b>
+                <span></span>
+            </div>
+
+            <p>
+                Automobiles are not just machines, they are
+                <br>
+                the perfect blend of passion, power and performance.
+            </p>
+
+            <div class="quote-footer">
+                <span></span>
+                <b>🚘</b>
+                <span></span>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Parts Section -->
+    <section class="content-section" id="parts">
+
+        <h2>OUR <span>PARTS</span></h2>
+
+        <div class="section-line"></div>
+
+        <p>
+            Explore quality automobile spare parts for your vehicle.
+        </p>
+
+    </section>
+
+
+    <!-- Showroom Section -->
+    <section class="content-section" id="showroom">
+
+        <h2>OUR <span>SHOWROOM</span></h2>
+
+        <div class="section-line"></div>
+
+        <p>
+            Discover automobiles and explore their features.
+        </p>
+
+    </section>
+
+
+    <!-- Service Section -->
+    <section class="content-section" id="service">
+
+        <h2>OUR <span>SERVICES</span></h2>
+
+        <div class="section-line"></div>
+
+        <p>
+            Quality maintenance and repair services for your automobile.
+        </p>
+
+    </section>
+
+
+    <!-- Footer -->
     <footer>
-        <p>Explore automobiles, enjoy the journey.</p>
-        <p>&copy; 2026 Automobile World. All rights reserved.</p>
+        © 2026 Automobile World |
+        Explore automobiles, enjoy the journey.
     </footer>
 
-    <script>
-        document.getElementById("contactForm")
-            .addEventListener("submit", function(event) {
-                event.preventDefault();
-
-                alert("Thank you for contacting Automobile World!");
-
-                this.reset();
-            });
-    </script>
+    <script src="script.js"></script>
 
 </body>
 </html>
